@@ -128,6 +128,10 @@ If `stateId` is set, that existing ioBroker state is exposed as the BACnet objec
 
 ## Changelog
 
+### 0.1.2
+
+- Add package and integration smoke tests for the release workflow.
+
 ### 0.1.1
 
 - Add release metadata, German documentation and checker-compatible repository setup.

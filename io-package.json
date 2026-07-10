@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bacnet-flex",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "news": {
+      "0.1.2": {
+        "en": "Add package and integration smoke tests for the release workflow.",
+        "de": "Package- und Integrations-Smoke-Tests fuer den Release-Workflow ergaenzt.",
+        "ru": "Добавлены package и integration smoke tests для release workflow.",
+        "pt": "Adicionados testes smoke de package e integracao para o workflow de release.",
+        "nl": "Package- en integratie-smoketests toegevoegd voor de release-workflow.",
+        "fr": "Ajout de tests smoke package et integration pour le workflow de release.",
+        "it": "Aggiunti test smoke package e integrazione per il workflow di release.",
+        "es": "Anadidas pruebas smoke de package e integracion para el workflow de release.",
+        "pl": "Dodano testy smoke package i integracji dla workflow wydania.",
+        "uk": "Додано package та integration smoke tests для release workflow.",
+        "zh-cn": "为发布工作流添加 package 和 integration smoke tests。"
+      },
       "0.1.1": {
         "en": "Add release metadata, German documentation and checker-compatible repository setup.",
         "de": "Release-Metadaten, deutsche Dokumentation und checkerkompatibles Repository-Setup ergaenzt.",
