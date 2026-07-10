@@ -2,6 +2,8 @@
 
 BACnet adapter for ioBroker with BACnet/IP client and server modes, BACnet MS/TP access through an external BACnet/IP-to-MS/TP router, and BACnet/SC client access through a Secure Connect hub.
 
+German documentation is available here: [README.de.md](README.de.md).
+
 ## Supported transports
 
 | Transport | Support | Notes |

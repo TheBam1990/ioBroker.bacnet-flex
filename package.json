@@ -8,10 +8,12 @@
   "main": "main.js",
   "files": [
     "admin",
+    ".releaseconfig.json",
     "io-package.json",
     "LICENSE",
     "main.js",
-    "README.md"
+    "README.md",
+    "README.de.md"
   ],
   "os": [
     "linux",

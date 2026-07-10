@@ -6,15 +6,15 @@
       "0.1.0": {
         "en": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
         "de": "Erster BACnet-Flex-Adapter mit BACnet/IP, MS/TP-Router und BACnet/SC-Client-Modi.",
-        "ru": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "pt": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "nl": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "fr": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "it": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "es": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "pl": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "uk": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "zh-cn": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes."
+        "ru": "Первый адаптер BACnet Flex с режимами BACnet/IP, маршрутизатором MS/TP и клиентом BACnet/SC.",
+        "pt": "Adaptador inicial BACnet Flex com modos BACnet/IP, roteador MS/TP e cliente BACnet/SC.",
+        "nl": "Eerste BACnet Flex-adapter met BACnet/IP, MS/TP-router en BACnet/SC-clientmodi.",
+        "fr": "Premier adaptateur BACnet Flex avec modes BACnet/IP, routeur MS/TP et client BACnet/SC.",
+        "it": "Primo adattatore BACnet Flex con modalita BACnet/IP, router MS/TP e client BACnet/SC.",
+        "es": "Adaptador inicial BACnet Flex con modos BACnet/IP, router MS/TP y cliente BACnet/SC.",
+        "pl": "Pierwszy adapter BACnet Flex z trybami BACnet/IP, routerem MS/TP i klientem BACnet/SC.",
+        "uk": "Перший адаптер BACnet Flex з режимами BACnet/IP, маршрутизатором MS/TP і клієнтом BACnet/SC.",
+        "zh-cn": "初始 BACnet Flex 适配器，支持 BACnet/IP、MS/TP 路由器和 BACnet/SC 客户端模式。"
       }
     },
     "titleLang": {

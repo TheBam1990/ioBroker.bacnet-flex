@@ -6,6 +6,7 @@ const fs = require("node:fs/promises");
 const { createRequire } = require("node:module");
 
 const requireFromHere = createRequire(__filename);
+const BACNET_WASM_PACKAGE = require("bacnet-wasm/package.json");
 
 const OBJECT_TYPES = {
     analogInput: 0,
