@@ -1,0 +1,7 @@
+rules:
+  - match:
+      dependency_type: development
+      update_type: semver:patch
+  - match:
+      dependency_type: development
+      update_type: semver:minor
