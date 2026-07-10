@@ -1,0 +1,435 @@
+{
+  "type": "tabs",
+  "items": {
+    "main": {
+      "type": "panel",
+      "label": {
+            "en": "BACnet",
+            "de": "BACnet"
+      },
+      "items": {
+        "enabled": {
+          "type": "checkbox",
+          "label": {
+            "en": "Enable adapter",
+            "de": "Adapter aktivieren"
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "mode": {
+          "type": "select",
+          "label": {
+            "en": "Mode",
+            "de": "Modus"
+          },
+          "options": [
+            { "label": "Client", "value": "client" },
+            { "label": "Server", "value": "server" },
+            { "label": "Client + Server", "value": "both" }
+          ],
+          "xs": 12,
+          "sm": 6
+        },
+        "transportMode": {
+          "type": "select",
+          "label": {
+            "en": "Transport",
+            "de": "Transport"
+          },
+          "options": [
+            { "label": "BACnet/IP", "value": "bacnet-ip" },
+            { "label": "BACnet MS/TP via BACnet/IP router", "value": "mstp-router" },
+            { "label": "BACnet/SC client", "value": "bacnet-sc" }
+          ],
+          "help": {
+            "en": "MS/TP uses an external BACnet/IP-to-MS/TP router or gateway. BACnet/SC currently supports client reads/writes via a Secure Connect hub.",
+            "de": "MS/TP nutzt einen externen BACnet/IP-zu-MS/TP-Router oder ein Gateway. BACnet/SC unterstuetzt aktuell Client-Lesen/-Schreiben ueber einen Secure-Connect-Hub."
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "port": {
+          "type": "number",
+          "label": {
+            "en": "BACnet/IP UDP port",
+            "de": "BACnet/IP UDP-Port"
+          },
+          "min": 1,
+          "max": 65535,
+          "xs": 12,
+          "sm": 6
+        },
+        "interface": {
+          "type": "text",
+          "label": {
+            "en": "Bind interface",
+            "de": "Bind-Interface"
+          },
+          "help": {
+            "en": "Use 0.0.0.0 for all interfaces or a specific local IP.",
+            "de": "0.0.0.0 fuer alle Interfaces oder eine konkrete lokale IP."
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "broadcastAddress": {
+          "type": "text",
+          "label": {
+            "en": "Broadcast address",
+            "de": "Broadcast-Adresse"
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "mstpRouterAddress": {
+          "type": "text",
+          "label": {
+            "en": "MS/TP router IP",
+            "de": "MS/TP-Router-IP"
+          },
+          "help": {
+            "en": "IP address of the external BACnet/IP-to-MS/TP router. Direct serial MS/TP is not implemented in this JavaScript adapter.",
+            "de": "IP-Adresse des externen BACnet/IP-zu-MS/TP-Routers. Direkter serieller MS/TP-Betrieb ist in diesem JavaScript-Adapter nicht implementiert."
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "mstpNetworkNumber": {
+          "type": "text",
+          "label": {
+            "en": "MS/TP network number",
+            "de": "MS/TP-Netzwerknummer"
+          },
+          "help": {
+            "en": "Optional documentation field for the BACnet network number behind the router.",
+            "de": "Optionales Dokumentationsfeld fuer die BACnet-Netzwerknummer hinter dem Router."
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "scHubUrl": {
+          "type": "text",
+          "label": {
+            "en": "BACnet/SC hub URL",
+            "de": "BACnet/SC Hub-URL"
+          },
+          "help": {
+            "en": "Secure Connect hub URL, for example wss://192.168.2.50:47809.",
+            "de": "Secure-Connect-Hub-URL, zum Beispiel wss://192.168.2.50:47809."
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "scDeviceUuid": {
+          "type": "text",
+          "label": {
+            "en": "BACnet/SC device UUID",
+            "de": "BACnet/SC Device UUID"
+          },
+          "help": {
+            "en": "Optional persistent local BACnet/SC device UUID. Leave empty to generate one at runtime.",
+            "de": "Optionale persistente lokale BACnet/SC Device UUID. Leer lassen, um zur Laufzeit eine UUID zu erzeugen."
+          },
+          "xs": 12,
+          "sm": 6
+        }
+      }
+    },
+    "client": {
+      "type": "panel",
+      "label": {
+        "en": "Client",
+        "de": "Client"
+      },
+      "items": {
+        "clientPollIntervalMs": {
+          "type": "number",
+          "label": {
+            "en": "Poll interval ms",
+            "de": "Polling-Intervall ms"
+          },
+          "min": 1000,
+          "max": 3600000,
+          "xs": 12,
+          "sm": 6
+        },
+        "clientTimeoutMs": {
+          "type": "number",
+          "label": {
+            "en": "Request timeout ms",
+            "de": "Request-Timeout ms"
+          },
+          "min": 1000,
+          "max": 120000,
+          "xs": 12,
+          "sm": 6
+        },
+        "clientDiscoverOnStart": {
+          "type": "checkbox",
+          "label": {
+            "en": "Discover devices on start",
+            "de": "Geraete beim Start suchen"
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "clientTargetIp": {
+          "type": "text",
+          "label": {
+            "en": "Client target IP",
+            "de": "Client Ziel-IP"
+          },
+          "help": {
+            "en": "IP address of the BACnet/IP device to read, for example 192.168.2.50.",
+            "de": "IP-Adresse des BACnet/IP-Geraets, z.B. 192.168.2.50."
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "clientTargetDeviceId": {
+          "type": "text",
+          "label": {
+            "en": "Client target device ID",
+            "de": "Client Ziel-Device-ID"
+          },
+          "help": {
+            "en": "Optional. Only needed for documentation/discovery, not for direct reads.",
+            "de": "Optional. Nur fuer Dokumentation/Discovery, nicht fuer direkte Lesezugriffe."
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "clientAutoDiscoverObjects": {
+          "type": "checkbox",
+          "label": {
+            "en": "Auto-discover objects from target IP",
+            "de": "Objekte von Ziel-IP automatisch erkennen"
+          },
+          "help": {
+            "en": "Reads the BACnet objectList from the target device when no manual object list is configured.",
+            "de": "Liest die BACnet objectList vom Zielgeraet, wenn keine manuelle Objektliste konfiguriert ist."
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "clientObjectsJson": {
+          "type": "text",
+          "label": {
+            "en": "Client objects JSON",
+            "de": "Client Objekte JSON"
+          },
+          "help": {
+            "en": "Objects to read from the target IP. Example: [{\"id\":\"temp\",\"name\":\"Temperature\",\"type\":\"analogValue\",\"instance\":1,\"write\":false}]",
+            "de": "Objekte, die von der Ziel-IP gelesen werden. Beispiel: [{\"id\":\"temp\",\"name\":\"Temperatur\",\"type\":\"analogValue\",\"instance\":1,\"write\":false}]"
+          },
+          "xs": 12,
+          "sm": 12,
+          "rows": 8
+        },
+        "clientDevicesJson": {
+          "type": "text",
+          "label": {
+            "en": "Advanced client devices JSON",
+            "de": "Erweitertes Client-Geraete JSON"
+          },
+          "help": {
+            "en": "Optional advanced array of multiple devices. Leave empty when using target IP above.",
+            "de": "Optionales erweitertes Array fuer mehrere Geraete. Leer lassen, wenn die Ziel-IP oben genutzt wird."
+          },
+          "xs": 12,
+          "sm": 12,
+          "rows": 10
+        }
+      }
+    },
+    "server": {
+      "type": "panel",
+      "label": {
+        "en": "Server",
+        "de": "Server"
+      },
+      "items": {
+        "serverDeviceId": {
+          "type": "number",
+          "label": {
+            "en": "Server device ID",
+            "de": "Server Device-ID"
+          },
+          "min": 0,
+          "max": 4194303,
+          "xs": 12,
+          "sm": 6
+        },
+        "serverVendorId": {
+          "type": "number",
+          "label": {
+            "en": "Vendor ID",
+            "de": "Vendor-ID"
+          },
+          "min": 0,
+          "max": 65535,
+          "xs": 12,
+          "sm": 6
+        },
+        "serverObjectName": {
+          "type": "text",
+          "label": {
+            "en": "Server object name",
+            "de": "Server Objektname"
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "serverStatesPattern": {
+          "type": "text",
+          "label": {
+            "en": "ioBroker states pattern",
+            "de": "ioBroker States-Pattern"
+          },
+          "help": {
+            "en": "Example: 0_userdata.0.*",
+            "de": "Beispiel: 0_userdata.0.*"
+          },
+          "xs": 12,
+          "sm": 6
+        },
+        "serverMaxObjects": {
+          "type": "number",
+          "label": {
+            "en": "Max published objects",
+            "de": "Max. veroeffentlichte Objekte"
+          },
+          "min": 1,
+          "max": 5000,
+          "xs": 12,
+          "sm": 6
+        },
+        "serverPoints": {
+          "type": "table",
+          "label": {
+            "en": "Manual BACnet server data points",
+            "de": "Manuelle BACnet-Server-Datenpunkte"
+          },
+          "import": true,
+          "export": true,
+          "showSecondAddAt": 10,
+          "xs": 12,
+          "sm": 12,
+          "items": [
+            {
+              "attr": "enabled",
+              "type": "checkbox",
+              "title": {
+                "en": "Active",
+                "de": "Aktiv"
+              },
+              "default": true,
+              "width": "70px"
+            },
+            {
+              "attr": "name",
+              "type": "text",
+              "title": {
+                "en": "Name",
+                "de": "Name"
+              },
+              "width": "180px"
+            },
+            {
+              "attr": "type",
+              "type": "select",
+              "title": {
+                "en": "BACnet type",
+                "de": "BACnet-Typ"
+              },
+              "default": "analogValue",
+              "width": "170px",
+              "options": [
+                { "label": "analogInput", "value": "analogInput" },
+                { "label": "analogOutput", "value": "analogOutput" },
+                { "label": "analogValue", "value": "analogValue" },
+                { "label": "binaryInput", "value": "binaryInput" },
+                { "label": "binaryOutput", "value": "binaryOutput" },
+                { "label": "binaryValue", "value": "binaryValue" },
+                { "label": "multiStateInput", "value": "multiStateInput" },
+                { "label": "multiStateOutput", "value": "multiStateOutput" },
+                { "label": "multiStateValue", "value": "multiStateValue" },
+                { "label": "characterStringValue", "value": "characterStringValue" },
+                { "label": "integerValue", "value": "integerValue" },
+                { "label": "largeAnalogValue", "value": "largeAnalogValue" },
+                { "label": "positiveIntegerValue", "value": "positiveIntegerValue" },
+                { "label": "binaryLightingOutput", "value": "binaryLightingOutput" }
+              ]
+            },
+            {
+              "attr": "instance",
+              "type": "number",
+              "title": {
+                "en": "Instance",
+                "de": "Instanz"
+              },
+              "min": 1,
+              "max": 4194303,
+              "width": "110px"
+            },
+            {
+              "attr": "stateId",
+              "type": "text",
+              "title": {
+                "en": "ioBroker state",
+                "de": "ioBroker-State"
+              },
+              "width": "280px"
+            },
+            {
+              "attr": "ioBrokerType",
+              "type": "select",
+              "title": {
+                "en": "State type",
+                "de": "State-Typ"
+              },
+              "width": "120px",
+              "options": [
+                { "label": "auto", "value": "" },
+                { "label": "number", "value": "number" },
+                { "label": "boolean", "value": "boolean" },
+                { "label": "string", "value": "string" }
+              ]
+            },
+            {
+              "attr": "writable",
+              "type": "checkbox",
+              "title": {
+                "en": "Writable",
+                "de": "Schreibbar"
+              },
+              "default": false,
+              "width": "90px"
+            },
+            {
+              "attr": "unit",
+              "type": "text",
+              "title": {
+                "en": "Unit",
+                "de": "Einheit"
+              },
+              "width": "90px"
+            }
+          ]
+        },
+        "serverUpdateIntervalMs": {
+          "type": "number",
+          "label": {
+            "en": "Cache update interval ms",
+            "de": "Cache-Update-Intervall ms"
+          },
+          "min": 1000,
+          "max": 3600000,
+          "xs": 12,
+          "sm": 6
+        }
+      }
+    }
+  }
+}

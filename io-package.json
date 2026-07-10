@@ -1,0 +1,84 @@
+{
+  "common": {
+    "name": "bacnet-flex",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "de": "Erster BACnet-Flex-Adapter mit BACnet/IP, MS/TP-Router und BACnet/SC-Client-Modi."
+      }
+    },
+    "titleLang": {
+      "en": "BACnet Flex",
+      "de": "BACnet Flex"
+    },
+    "desc": {
+      "en": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "de": "BACnet-Adapter fuer ioBroker mit BACnet/IP, MS/TP-Router und BACnet/SC-Client-Modi."
+    },
+    "authors": [
+      "TheBam1990"
+    ],
+    "keywords": [
+      "bacnet",
+      "bacnet-ip",
+      "bacnet-mstp",
+      "bacnet-sc",
+      "building",
+      "automation"
+    ],
+    "license": "MIT",
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "bacnet.svg",
+    "enabled": true,
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "iot-systems",
+    "compact": false,
+    "connectionType": "local",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.20"
+      }
+    ]
+  },
+  "native": {
+    "enabled": true,
+    "mode": "client",
+    "transportMode": "bacnet-ip",
+    "port": 47808,
+    "interface": "0.0.0.0",
+    "broadcastAddress": "255.255.255.255",
+    "mstpRouterAddress": "",
+    "mstpNetworkNumber": "",
+    "mstpNote": "",
+    "scHubUrl": "",
+    "scDeviceUuid": "",
+    "clientPollIntervalMs": 30000,
+    "clientTimeoutMs": 10000,
+    "clientDiscoverOnStart": true,
+    "clientDevicesJson": "[]",
+    "serverDeviceId": 810203,
+    "serverVendorId": 999,
+    "serverObjectName": "ioBroker BACnet",
+    "serverStatesPattern": "0_userdata.0.*",
+    "serverMaxObjects": 500,
+    "serverUpdateIntervalMs": 10000
+  },
+  "objects": [],
+  "instanceObjects": []
+}
