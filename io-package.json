@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bacnet-flex",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "news": {
+      "0.1.3": {
+        "en": "Clean release metadata after the 0.1.2 workflow release.",
+        "de": "Release-Metadaten nach dem 0.1.2 Workflow-Release bereinigt.",
+        "ru": "Очищены метаданные релиза после workflow release 0.1.2.",
+        "pt": "Metadados de lancamento limpos apos o release 0.1.2 pelo workflow.",
+        "nl": "Release-metadata opgeschoond na de 0.1.2 workflow-release.",
+        "fr": "Nettoyage des metadonnees de version apres le release workflow 0.1.2.",
+        "it": "Metadati di rilascio ripuliti dopo il release workflow 0.1.2.",
+        "es": "Metadatos de version limpiados tras el release 0.1.2 del workflow.",
+        "pl": "Wyczyszczono metadane wydania po release workflow 0.1.2.",
+        "uk": "Очищено метадані релізу після workflow release 0.1.2.",
+        "zh-cn": "在 0.1.2 工作流发布后清理发布元数据。"
+      },
       "0.1.2": {
         "en": "Add package and integration smoke tests for the release workflow.",
         "de": "Package- und Integrations-Smoke-Tests fuer den Release-Workflow ergaenzt.",
@@ -15,19 +28,6 @@
         "pl": "Dodano testy smoke package i integracji dla workflow wydania.",
         "uk": "Додано package та integration smoke tests для release workflow.",
         "zh-cn": "为发布工作流添加 package 和 integration smoke tests。"
-      },
-      "0.1.1": {
-        "en": "Add release metadata, German documentation and checker-compatible repository setup.",
-        "de": "Release-Metadaten, deutsche Dokumentation und checkerkompatibles Repository-Setup ergaenzt.",
-        "ru": "Добавлены метаданные релиза, немецкая документация и настройка репозитория для checker.",
-        "pt": "Adicionados metadados de lancamento, documentacao alema e configuracao compativel com o checker.",
-        "nl": "Release-metadata, Duitse documentatie en checker-compatibele repository-instelling toegevoegd.",
-        "fr": "Ajout des metadonnees de version, de la documentation allemande et dune configuration compatible checker.",
-        "it": "Aggiunti metadati di rilascio, documentazione tedesca e configurazione compatibile con checker.",
-        "es": "Anadidos metadatos de version, documentacion alemana y configuracion compatible con checker.",
-        "pl": "Dodano metadane wydania, niemiecka dokumentacje i konfiguracje repozytorium zgodna z checkerem.",
-        "uk": "Додано метадані релізу, німецьку документацію та налаштування репозиторію для checker.",
-        "zh-cn": "添加发布元数据、德语文档以及兼容 checker 的仓库配置。"
       },
       "0.1.0": {
         "en": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",

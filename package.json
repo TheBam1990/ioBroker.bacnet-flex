@@ -1,6 +1,6 @@
 {
   "name": "iobroker.bacnet-flex",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ioBroker BACnet adapter with BACnet/IP, MS/TP router and BACnet/SC client modes",
   "author": "TheBam1990",
   "homepage": "https://github.com/TheBam1990/ioBroker.bacnet-flex",
