@@ -4,8 +4,8 @@
     "main": {
       "type": "panel",
       "label": {
-            "en": "BACnet",
-            "de": "BACnet"
+        "en": "BACnet",
+        "de": "BACnet"
       },
       "items": {
         "enabled": {
@@ -15,7 +15,10 @@
             "de": "Adapter aktivieren"
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "mode": {
           "type": "select",
@@ -24,12 +27,24 @@
             "de": "Modus"
           },
           "options": [
-            { "label": "Client", "value": "client" },
-            { "label": "Server", "value": "server" },
-            { "label": "Client + Server", "value": "both" }
+            {
+              "label": "Client",
+              "value": "client"
+            },
+            {
+              "label": "Server",
+              "value": "server"
+            },
+            {
+              "label": "Client + Server",
+              "value": "both"
+            }
           ],
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "transportMode": {
           "type": "select",
@@ -38,16 +53,28 @@
             "de": "Transport"
           },
           "options": [
-            { "label": "BACnet/IP", "value": "bacnet-ip" },
-            { "label": "BACnet MS/TP via BACnet/IP router", "value": "mstp-router" },
-            { "label": "BACnet/SC client", "value": "bacnet-sc" }
+            {
+              "label": "BACnet/IP",
+              "value": "bacnet-ip"
+            },
+            {
+              "label": "BACnet MS/TP via BACnet/IP router",
+              "value": "mstp-router"
+            },
+            {
+              "label": "BACnet/SC client",
+              "value": "bacnet-sc"
+            }
           ],
           "help": {
             "en": "MS/TP uses an external BACnet/IP-to-MS/TP router or gateway. BACnet/SC currently supports client reads/writes via a Secure Connect hub.",
             "de": "MS/TP nutzt einen externen BACnet/IP-zu-MS/TP-Router oder ein Gateway. BACnet/SC unterstuetzt aktuell Client-Lesen/-Schreiben ueber einen Secure-Connect-Hub."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "port": {
           "type": "number",
@@ -58,7 +85,10 @@
           "min": 1,
           "max": 65535,
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "interface": {
           "type": "text",
@@ -71,7 +101,10 @@
             "de": "0.0.0.0 fuer alle Interfaces oder eine konkrete lokale IP."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "broadcastAddress": {
           "type": "text",
@@ -80,7 +113,10 @@
             "de": "Broadcast-Adresse"
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "mstpRouterAddress": {
           "type": "text",
@@ -93,7 +129,10 @@
             "de": "IP-Adresse des externen BACnet/IP-zu-MS/TP-Routers. Direkter serieller MS/TP-Betrieb ist in diesem JavaScript-Adapter nicht implementiert."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "mstpNetworkNumber": {
           "type": "text",
@@ -106,7 +145,10 @@
             "de": "Optionales Dokumentationsfeld fuer die BACnet-Netzwerknummer hinter dem Router."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "scHubUrl": {
           "type": "text",
@@ -119,7 +161,10 @@
             "de": "Secure-Connect-Hub-URL, zum Beispiel wss://192.168.2.50:47809."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "scDeviceUuid": {
           "type": "text",
@@ -132,7 +177,10 @@
             "de": "Optionale persistente lokale BACnet/SC Device UUID. Leer lassen, um zur Laufzeit eine UUID zu erzeugen."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         }
       }
     },
@@ -152,7 +200,10 @@
           "min": 1000,
           "max": 3600000,
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "clientTimeoutMs": {
           "type": "number",
@@ -163,7 +214,10 @@
           "min": 1000,
           "max": 120000,
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "clientDiscoverOnStart": {
           "type": "checkbox",
@@ -172,7 +226,10 @@
             "de": "Geraete beim Start suchen"
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "clientTargetIp": {
           "type": "text",
@@ -185,7 +242,10 @@
             "de": "IP-Adresse des BACnet/IP-Geraets, z.B. 192.168.2.50."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "clientTargetDeviceId": {
           "type": "text",
@@ -198,7 +258,10 @@
             "de": "Optional. Nur fuer Dokumentation/Discovery, nicht fuer direkte Lesezugriffe."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "clientAutoDiscoverObjects": {
           "type": "checkbox",
@@ -211,7 +274,10 @@
             "de": "Liest die BACnet objectList vom Zielgeraet, wenn keine manuelle Objektliste konfiguriert ist."
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "clientObjectsJson": {
           "type": "text",
@@ -225,7 +291,9 @@
           },
           "xs": 12,
           "sm": 12,
-          "rows": 8
+          "md": 12,
+          "lg": 12,
+          "xl": 12
         },
         "clientDevicesJson": {
           "type": "text",
@@ -239,7 +307,9 @@
           },
           "xs": 12,
           "sm": 12,
-          "rows": 10
+          "md": 12,
+          "lg": 12,
+          "xl": 12
         }
       }
     },
@@ -259,7 +329,10 @@
           "min": 0,
           "max": 4194303,
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "serverVendorId": {
           "type": "number",
@@ -270,7 +343,10 @@
           "min": 0,
           "max": 65535,
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "serverObjectName": {
           "type": "text",
@@ -279,7 +355,10 @@
             "de": "Server Objektname"
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "serverStatesPattern": {
           "type": "text",
@@ -292,7 +371,10 @@
             "de": "Beispiel: 0_userdata.0.*"
           },
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "serverMaxObjects": {
           "type": "number",
@@ -303,7 +385,10 @@
           "min": 1,
           "max": 5000,
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         },
         "serverPoints": {
           "type": "table",
@@ -346,20 +431,62 @@
               "default": "analogValue",
               "width": "170px",
               "options": [
-                { "label": "analogInput", "value": "analogInput" },
-                { "label": "analogOutput", "value": "analogOutput" },
-                { "label": "analogValue", "value": "analogValue" },
-                { "label": "binaryInput", "value": "binaryInput" },
-                { "label": "binaryOutput", "value": "binaryOutput" },
-                { "label": "binaryValue", "value": "binaryValue" },
-                { "label": "multiStateInput", "value": "multiStateInput" },
-                { "label": "multiStateOutput", "value": "multiStateOutput" },
-                { "label": "multiStateValue", "value": "multiStateValue" },
-                { "label": "characterStringValue", "value": "characterStringValue" },
-                { "label": "integerValue", "value": "integerValue" },
-                { "label": "largeAnalogValue", "value": "largeAnalogValue" },
-                { "label": "positiveIntegerValue", "value": "positiveIntegerValue" },
-                { "label": "binaryLightingOutput", "value": "binaryLightingOutput" }
+                {
+                  "label": "analogInput",
+                  "value": "analogInput"
+                },
+                {
+                  "label": "analogOutput",
+                  "value": "analogOutput"
+                },
+                {
+                  "label": "analogValue",
+                  "value": "analogValue"
+                },
+                {
+                  "label": "binaryInput",
+                  "value": "binaryInput"
+                },
+                {
+                  "label": "binaryOutput",
+                  "value": "binaryOutput"
+                },
+                {
+                  "label": "binaryValue",
+                  "value": "binaryValue"
+                },
+                {
+                  "label": "multiStateInput",
+                  "value": "multiStateInput"
+                },
+                {
+                  "label": "multiStateOutput",
+                  "value": "multiStateOutput"
+                },
+                {
+                  "label": "multiStateValue",
+                  "value": "multiStateValue"
+                },
+                {
+                  "label": "characterStringValue",
+                  "value": "characterStringValue"
+                },
+                {
+                  "label": "integerValue",
+                  "value": "integerValue"
+                },
+                {
+                  "label": "largeAnalogValue",
+                  "value": "largeAnalogValue"
+                },
+                {
+                  "label": "positiveIntegerValue",
+                  "value": "positiveIntegerValue"
+                },
+                {
+                  "label": "binaryLightingOutput",
+                  "value": "binaryLightingOutput"
+                }
               ]
             },
             {
@@ -391,10 +518,22 @@
               },
               "width": "120px",
               "options": [
-                { "label": "auto", "value": "" },
-                { "label": "number", "value": "number" },
-                { "label": "boolean", "value": "boolean" },
-                { "label": "string", "value": "string" }
+                {
+                  "label": "auto",
+                  "value": ""
+                },
+                {
+                  "label": "number",
+                  "value": "number"
+                },
+                {
+                  "label": "boolean",
+                  "value": "boolean"
+                },
+                {
+                  "label": "string",
+                  "value": "string"
+                }
               ]
             },
             {
@@ -416,7 +555,10 @@
               },
               "width": "90px"
             }
-          ]
+          ],
+          "md": 12,
+          "lg": 12,
+          "xl": 12
         },
         "serverUpdateIntervalMs": {
           "type": "number",
@@ -427,9 +569,13 @@
           "min": 1000,
           "max": 3600000,
           "xs": 12,
-          "sm": 6
+          "sm": 6,
+          "md": 6,
+          "lg": 6,
+          "xl": 6
         }
       }
     }
-  }
+  },
+  "i18n": true
 }

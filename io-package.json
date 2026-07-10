@@ -5,16 +5,43 @@
     "news": {
       "0.1.0": {
         "en": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-        "de": "Erster BACnet-Flex-Adapter mit BACnet/IP, MS/TP-Router und BACnet/SC-Client-Modi."
+        "de": "Erster BACnet-Flex-Adapter mit BACnet/IP, MS/TP-Router und BACnet/SC-Client-Modi.",
+        "ru": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "pt": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "nl": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "fr": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "it": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "es": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "pl": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "uk": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+        "zh-cn": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes."
       }
     },
     "titleLang": {
       "en": "BACnet Flex",
-      "de": "BACnet Flex"
+      "de": "BACnet Flex",
+      "ru": "BACnet Flex",
+      "pt": "BACnet Flex",
+      "nl": "BACnet Flex",
+      "fr": "BACnet Flex",
+      "it": "BACnet Flex",
+      "es": "BACnet Flex",
+      "pl": "BACnet Flex",
+      "uk": "BACnet Flex",
+      "zh-cn": "BACnet Flex"
     },
     "desc": {
       "en": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
-      "de": "BACnet-Adapter fuer ioBroker mit BACnet/IP, MS/TP-Router und BACnet/SC-Client-Modi."
+      "de": "BACnet-Adapter fuer ioBroker mit BACnet/IP, MS/TP-Router und BACnet/SC-Client-Modi.",
+      "ru": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "pt": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "nl": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "fr": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "it": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "es": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "pl": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "uk": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes.",
+      "zh-cn": "BACnet adapter for ioBroker with BACnet/IP, MS/TP router and BACnet/SC client modes."
     },
     "authors": [
       "TheBam1990"
@@ -27,19 +54,20 @@
       "building",
       "automation"
     ],
-    "license": "MIT",
     "licenseInformation": {
       "type": "free",
       "license": "MIT"
     },
     "platform": "Javascript/Node.js",
-    "main": "main.js",
     "icon": "bacnet.svg",
+    "extIcon": "https://raw.githubusercontent.com/TheBam1990/ioBroker.bacnet-flex/main/admin/bacnet.svg",
+    "readme": "https://github.com/TheBam1990/ioBroker.bacnet-flex/blob/main/README.md",
     "enabled": true,
     "loglevel": "info",
     "mode": "daemon",
     "type": "iot-systems",
-    "compact": false,
+    "tier": 3,
+    "compact": true,
     "connectionType": "local",
     "dataSource": "poll",
     "adminUI": {
