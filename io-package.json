@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bacnet-flex",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "news": {
+      "0.1.1": {
+        "en": "Add release metadata, German documentation and checker-compatible repository setup.",
+        "de": "Release-Metadaten, deutsche Dokumentation und checkerkompatibles Repository-Setup ergaenzt.",
+        "ru": "Добавлены метаданные релиза, немецкая документация и настройка репозитория для checker.",
+        "pt": "Adicionados metadados de lancamento, documentacao alema e configuracao compativel com o checker.",
+        "nl": "Release-metadata, Duitse documentatie en checker-compatibele repository-instelling toegevoegd.",
+        "fr": "Ajout des metadonnees de version, de la documentation allemande et dune configuration compatible checker.",
+        "it": "Aggiunti metadati di rilascio, documentazione tedesca e configurazione compatibile con checker.",
+        "es": "Anadidos metadatos de version, documentacion alemana y configuracion compatible con checker.",
+        "pl": "Dodano metadane wydania, niemiecka dokumentacje i konfiguracje repozytorium zgodna z checkerem.",
+        "uk": "Додано метадані релізу, німецьку документацію та налаштування репозиторію для checker.",
+        "zh-cn": "添加发布元数据、德语文档以及兼容 checker 的仓库配置。"
+      },
       "0.1.0": {
         "en": "Initial BACnet Flex adapter with BACnet/IP, MS/TP router and BACnet/SC client modes.",
         "de": "Erster BACnet-Flex-Adapter mit BACnet/IP, MS/TP-Router und BACnet/SC-Client-Modi.",

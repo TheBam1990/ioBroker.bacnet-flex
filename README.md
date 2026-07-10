@@ -128,9 +128,15 @@ If `stateId` is set, that existing ioBroker state is exposed as the BACnet objec
 
 ## Changelog
 
+### 0.1.1
+
+- Add release metadata, German documentation and checker-compatible repository setup.
+
 ### 0.1.0
 
 - Initial BACnet Flex adapter with BACnet/IP client/server, MS/TP router mode and BACnet/SC client mode.
+
+Older entries are stored in [CHANGELOG_OLD.md](CHANGELOG_OLD.md).
 
 ## License
 
